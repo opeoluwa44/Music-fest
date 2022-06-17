@@ -1,0 +1,242 @@
+body{
+    line-height: 1.5;
+}
+
+.section{
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.section-pad{
+    padding: 0 5vw;
+    position: relative;
+}
+
+.container{
+    margin: auto;
+    max-width: 810px;
+    text-align: center;
+    z-index: 2;
+    line-height: 1;
+    
+}
+
+.intro{
+    background: url("../images/intro.jpg");
+}
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    display: block;
+    width: 112px;
+    margin: 0 auto;
+    
+   
+}
+
+.logo img{
+    width: 100%;
+    margin-bottom: -1em;
+
+}
+
+.mix-difference p,
+.mix-difference span{
+    font-size: 32px;
+    text-align: left;
+    color: #fff;
+   
+} 
+
+
+.mix-difference{
+    mix-blend-mode: difference;
+}
+
+.appear{
+    animation: fadeIn 3s 2s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translate(0);
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.marquee{
+    position: absolute;
+    top: 1vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee span{
+    font-size: 5vw;
+    display: block;
+    white-space: nowrap;
+    animation: moveLeft 200s infinite;
+}
+
+@keyframes moveLeft {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-3000vw);
+    }
+    
+}
+
+.day-1{
+    background:#FF74A7;
+    position: relative;
+}
+
+.center{
+    margin: auto;
+    min-width: 170px;
+    
+}
+
+.date{
+    color: #FFEECF;
+    font-size: 28px;
+    margin-left: 1.5em;
+}
+
+.lineup{
+    list-style: none;
+}
+
+.lineup h2{
+    font-size: 56px;
+}
+
+.lineup p{
+    font-size: 21px;
+}
+
+.day-2{
+    background: #00B290;
+}
+
+.day-3{
+    background: url("../images/day-3.jpg");
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.register{
+    min-height: 65vh;
+    background: #FFEECF;
+    display: flex;
+}
+
+.footer {
+    min-height: 35vh;
+    background: #000000;
+    display: flex;
+}
+
+.footer .container{
+    margin: auto;
+}
+
+.lunch-medium{
+    font-size: 40px;
+}
+
+form{
+    display: flex;
+    border-bottom: 3px solid #00B290;
+}
+
+input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 21px;
+}
+.email-input{
+    flex: 1;
+}
+
+.button{
+    min-width: 200px;
+    height: 35px;
+    border: 2px solid #FFEECF;
+    display: block;
+    color: #FFEECF;
+    text-decoration: none;
+}
+
+.eyes{
+    background: url("../images/eyes_open.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 108px;
+    height: 35px;
+}
+
+.hand{
+    background: url("../images/ok_hand.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 85px;
+    align-self: flex-end;
+    
+}
+
+.register .container{
+    display: flex;
+}
+
+.form{
+    margin: 3em 3em 3em 0;
+}
+
+.scroll-to-intro{
+    background: url("../images/down-arrow-light.svg");
+   
+}
+
+.scroll-to{
+    background: url("../images/down-arrow.svg");
+    width: 80px;
+   
+}
+
+.js-scroll{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    display: block;
+    bottom: -45vh;
+    right: 50%;
+    position: relative;
+
+}

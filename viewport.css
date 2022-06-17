@@ -1,0 +1,10 @@
+.lineup, .shape, .date{
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+.in-viewport .date,
+.in-viewport .lineup,
+.in-viewport .shape{
+    opacity: 1;
+}
